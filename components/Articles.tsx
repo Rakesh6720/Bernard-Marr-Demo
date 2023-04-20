@@ -8,7 +8,7 @@ export default async function Articles() {
       <div className="bg-black text-white h-16 justify-center flex items-center text-2xl">
         Recent Articles
       </div>
-      <div className="flex justify-between my-5">
+      <div className="lg:flex lg:flex-row sm:flex-col sm:items-center sm:mx-auto gap-5 lg:justify-center md:justify-between my-5 flex-wrap">
         {articles.map((article) => (
           <Article
             key={article._id}
