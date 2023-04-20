@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
+      {/* @ts-expect-error Async Server Component */}
       <YouTube />
       {/* @ts-expect-error Async Server Component */}
       <Articles />

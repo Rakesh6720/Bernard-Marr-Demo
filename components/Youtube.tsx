@@ -1,6 +1,8 @@
+import { getVideos } from "@/sanity/sanity-utils";
 import Video from "./Video";
 
-export default function YouTube() {
+export default async function YouTube() {
+  const videos = await getVideos();
   return (
     <div className="flex-col">
       <div className="flex ml-8 py-5 items-center">
@@ -17,46 +19,9 @@ export default function YouTube() {
         </div>
       </div>
       <div className="flex ml-8 mr-10 items-center justify-center sm:flex-col-1">
-        <div className="flex-col items-center justify-center text-center">
-          <iframe
-            className="my-5 mx-3"
-            width="400"
-            height="200"
-            src={`https://www.youtube.com/embed/CcBHZ0t2Qwc?autoplay=0&origin=http://example.com&controls=1&rel=0`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Embedded youtube"
-          />
-          <>The 5 Biggest Artificial Intelligence Trends In...</>
-        </div>
-        <Video src="`https://youtu.be/kLsER_zHiS4" title="Youtube For Sanity" />
-        <div className="flex-col items-center justify-center text-center">
-          <iframe
-            className="m-5"
-            width="400"
-            height="200"
-            src={`https://www.youtube.com/embed/UhJ8cas5XX0?autoplay=0&origin=http://example.com&controls=1&rel=1`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Embedded youtube"
-          />
-          <h4>The 5 Biggest Artificial Intelligence Trends In...</h4>
-        </div>
-        <div className="flex-col items-center justify-center text-center">
-          <iframe
-            className="m-5"
-            width="400"
-            height="200"
-            src={`https://www.youtube.com/embed/rCG6Gdj_fWE?autoplay=0&origin=http://example.com&controls=1&rel=1`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Embedded youtube"
-          />
-          <h4>The 5 Biggest Artificial Intelligence Trends In...</h4>
-        </div>
+        {videos.map((video) => (
+          <Video key={video._id} src={video.url} title={video.title} />
+        ))}
       </div>
     </div>
   );

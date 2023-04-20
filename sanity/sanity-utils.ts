@@ -1,5 +1,6 @@
 import { Article } from "@/types/Article";
 import { Project } from "@/types/Project";
+import { Video } from "@/types/Video";
 import { createClient, groq } from "next-sanity";
 
 export async function getProjects(): Promise<Project[]> {
@@ -58,5 +59,22 @@ export async function getArticle(slug: string): Promise<Article> {
       content
     }`,
     { slug }
+  );
+}
+
+export async function getVideos(): Promise<Video[]> {
+  const client = createClient({
+    projectId: "vfzx5jgi",
+    dataset: "production",
+    apiVersion: "2023-04-11",
+  });
+
+  return client.fetch(
+    groq`*[_type == "video"]{
+      _id,
+      _createdAt,
+      title,
+      url
+    }`
   );
 }
