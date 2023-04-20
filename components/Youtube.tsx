@@ -1,3 +1,5 @@
+import Video from "./Video";
+
 export default function YouTube() {
   return (
     <div className="flex-col">
@@ -28,6 +30,7 @@ export default function YouTube() {
           />
           <>The 5 Biggest Artificial Intelligence Trends In...</>
         </div>
+        <Video src="`https://youtu.be/kLsER_zHiS4" title="Youtube For Sanity" />
         <div className="flex-col items-center justify-center text-center">
           <iframe
             className="m-5"
