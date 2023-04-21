@@ -16,7 +16,7 @@ const Video = ({ src, title }: { src: string; title: string }) => {
         allowFullScreen
         title={title}
       />
-      <>{title}</>
+      <h3 className="w-[400px]">{title}</h3>
     </div>
   );
 };

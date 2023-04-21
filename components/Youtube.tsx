@@ -18,7 +18,7 @@ export default async function YouTube() {
           <p className="border border-black h-10 flex items-center">71K</p>
         </div>
       </div>
-      <div className="flex ml-8 mr-10 items-center justify-center sm:flex-col-1">
+      <div className="flex ml-8 mr-10 justify-center items-center flex-wrap">
         {videos.map((video) => (
           <Video key={video._id} src={video.url} title={video.title} />
         ))}
