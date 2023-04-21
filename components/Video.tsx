@@ -3,7 +3,6 @@ import getYouTubeID from "get-youtube-id";
 
 const Video = ({ src, title }: { src: string; title: string }) => {
   const id = getYouTubeID(src);
-  console.log(id);
   return (
     <div className="flex-col items-center justify-center text-center">
       <iframe
