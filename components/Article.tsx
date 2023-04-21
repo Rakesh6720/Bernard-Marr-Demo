@@ -1,3 +1,4 @@
+import { PortableText } from "@portabletext/react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { PortableTextBlock } from "sanity";
@@ -25,15 +26,10 @@ export default function Article({
       <Link href={`/articles/${slug}`}>
         <Image src={image} alt={title} width={400} height={300} />
         <div className="p-5">
-          <h1 className="text-xl">
-            The Evolution of AI: Transforming The World One Algorithm At a Time
-          </h1>
-          <p>
-            The field of artificial intelligence (AI) has come a long way since
-            its inception, evolving from the realm of science fiction into an
-            increasingly indispensable technology that&apos;s transforming
-            industries and lives worldwide.[...]
-          </p>
+          <h1 className="text-xl mb-2">{title}</h1>
+
+          <PortableText value={content} />
+
           <div className="bg-[#c6ce00] relative ml-60 py-3 mt-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
