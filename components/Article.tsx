@@ -34,14 +34,14 @@ export default function Article({
             increasingly indispensable technology that&apos;s transforming
             industries and lives worldwide.[...]
           </p>
-          <div className="bg-yellow-500 relative ml-60 py-3 mt-5">
+          <div className="bg-[#c6ce00] relative ml-60 py-3 mt-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6 mr-0 ml-auto"
+              className="w-6 h-6 mx-auto"
             >
               <path
                 strokeLinecap="round"

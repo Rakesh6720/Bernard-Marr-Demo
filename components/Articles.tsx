@@ -5,10 +5,10 @@ export default async function Articles() {
   const articles = await getArticles();
   return (
     <div className="flex-col mt-10 mb-5 mx-5">
-      <div className="bg-black text-white h-16 justify-center flex items-center text-2xl">
+      <div className="bg-black text-white h-16 justify-center flex items-center text-2xl mb-3">
         Recent Articles
       </div>
-      <div className="lg:flex lg:flex-row sm:flex-col sm:items-center sm:mx-auto gap-5 lg:justify-center md:justify-between my-5 flex-wrap">
+      <div className="flex flex-col items-center justify-center gap-6 md:fex md:flex-row md:flex-wrap md:justify-normal">
         {articles.map((article) => (
           <Article
             key={article._id}
