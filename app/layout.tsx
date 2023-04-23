@@ -1,5 +1,7 @@
 import NavBar from "@/components/Navbar";
 import "./globals.css";
+import NavMenu from "@/components/NavMenu";
+import SearchBar from "@/components/SearchBar";
 
 export const metadata = {
   title: "Bernard Marr & Co",
@@ -14,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#ffffff] m-10">
-        <NavBar />
+        <NavBar>
+          <SearchBar />
+          <NavMenu />
+        </NavBar>
         {children}
       </body>
     </html>
