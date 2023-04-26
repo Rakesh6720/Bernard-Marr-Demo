@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -10,7 +11,7 @@ export default function Hero() {
           influencers at the intersection of business and technology
         </p>
         <button className="bg-black text-white px-8 py-3 mt-5">
-          VIEW MORE
+          <Link href="/services">VIEW MORE</Link>
         </button>
       </div>
       <Image
