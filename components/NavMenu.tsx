@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const NavMenu = () => {
@@ -14,7 +15,24 @@ const NavMenu = () => {
       </button>
     );
   } else {
-    return <div className="bg-red-500 w-64 h-64" onClick={clickHandler} />;
+    return (
+      <div
+        className="bg-red-500 z-10 w-[500px] h-[200px] mt-[200px]"
+        onClick={clickHandler}
+      >
+        <ul>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/services">Services</Link>
+          </li>
+        </ul>
+      </div>
+    );
   }
 };
 
