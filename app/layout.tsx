@@ -2,7 +2,7 @@ import "./globals.css";
 import AppBarComponent from "@/components/AppBarComponent";
 
 export const metadata = {
-  title: "Bernard Marr & Co",
+  title: "Next13-Sanity-Portfolio-Site",
   description: "Future. Business. Success",
 };
 
