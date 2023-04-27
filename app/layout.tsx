@@ -1,7 +1,7 @@
 import NavBar from "@/components/Navbar";
 import "./globals.css";
-import NavMenu from "@/components/NavMenu";
-import SearchBar from "@/components/SearchBar";
+import Navigation from "@/components/Navigaton";
+import AppBarComponent from "@/components/AppBarComponent";
 
 export const metadata = {
   title: "Bernard Marr & Co",
@@ -15,11 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#ffffff] m-10">
-        <NavBar>
-          <SearchBar />
-          <NavMenu />
-        </NavBar>
+      <body className="bg-[#ffffff]">
+        {/* <NavBar>
+          <Navigation />
+        </NavBar> */}
+        <AppBarComponent />
         {children}
       </body>
     </html>
