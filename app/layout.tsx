@@ -1,6 +1,4 @@
-import NavBar from "@/components/Navbar";
 import "./globals.css";
-import Navigation from "@/components/Navigaton";
 import AppBarComponent from "@/components/AppBarComponent";
 
 export const metadata = {
@@ -15,10 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#ffffff] m-3">
-        {/* <NavBar>
-          <Navigation />
-        </NavBar> */}
+      <body>
         <AppBarComponent />
         {children}
       </body>

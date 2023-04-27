@@ -6,13 +6,12 @@ import YouTube from "@/components/Youtube";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Hero />
       {/* @ts-expect-error Async Server Component */}
       <YouTube />
       {/* @ts-expect-error Async Server Component */}
       <Articles />
-      <Clients />
     </div>
   );
 }
