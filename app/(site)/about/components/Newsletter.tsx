@@ -16,7 +16,7 @@ function Newsletter() {
             <li>Join my 1 million newsletter subscribers</li>
             <li>Never miss any new content</li>
           </ul>
-          <div className="flex flex-row justify-around mt-3">
+          <div className="md:flex lg:flex-row justify-around mt-3 sm:flex-col">
             <input className="py-5 px-5" placeholder="Email" type="text" />
             <input className="py-5 px-5" placeholder="Name" type="text" />
             <button className="bg-[#c6ce00] text-white px-7">Sign-up</button>
