@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="flex">
-      <div className="z-10 bg-[#c6ce00] lg:w-3/4 -mr-20 p-10 lg:my-auto lg:flex-col lg:justify-center">
+    <div className="flex max-w-screen">
+      <div className="lg:z-10 bg-[#c6ce00] lg:w-3/4 lg:-mr-20 p-10 lg:my-auto lg:flex-col lg:justify-center">
         <h3 className="text-white text-5xl py-5">Influencer</h3>
         <p className="text-white text-lg">
           Bernard Marr is one of the world&apos;s most successful social media

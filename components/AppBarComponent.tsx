@@ -32,7 +32,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" color="default">
+    <AppBar position="relative" color="default">
       <Container>
         <Toolbar disableGutters>
           <Box>
