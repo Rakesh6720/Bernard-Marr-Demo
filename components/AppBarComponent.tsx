@@ -121,7 +121,7 @@ const ResponsiveAppBar = () => {
               </Link>
               <Link
                 href="/services"
-                className="text-black pl-3 py-1 hover:bg-black hover:text-white rounded"
+                className="text-black px-3 py-1 hover:bg-black hover:text-white rounded"
               >
                 Services
               </Link>

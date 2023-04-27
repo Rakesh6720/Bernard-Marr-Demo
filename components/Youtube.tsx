@@ -31,7 +31,7 @@ export default async function YouTube() {
           </button>
         </div>
       </div>
-      <div className="md:flex mr-12 md:ml-8 md:justify-center lg:justify-between md:items-center flex-wrap">
+      <div className="md:flex mr-12 md:ml-8 md:justify-center lg:justify-between md:items-center ml-32 flex-wrap">
         {videos.map((video, index) => {
           if (index < 4) {
             return (
