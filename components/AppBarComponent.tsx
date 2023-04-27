@@ -33,11 +33,11 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar position="relative" color="default">
-      <Container>
+      <div>
         <Toolbar disableGutters>
           <Box>
             <Link href="/">
-              <div className="">
+              <div className="ml-3">
                 <h1 className="text-black w-80 text-2xl">Bernard Marr & Co.</h1>
                 <h3 className="text-md leading-3 text-black">
                   Future . Business . Success
@@ -125,7 +125,7 @@ const ResponsiveAppBar = () => {
             </Button>
           </Box>
         </Toolbar>
-      </Container>
+      </div>
     </AppBar>
   );
 };
