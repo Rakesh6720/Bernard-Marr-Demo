@@ -11,7 +11,7 @@ function Card({
   image: string;
 }) {
   return (
-    <div className="w-[425px] border flex-col-1 h-[500px] mb-5">
+    <div className="w-[425px] border flex-col-1 mb-5">
       <Image src={image} alt={title} width={425} height={313} />
       <h1 className="text-[#c6ce00] text-xl font-semibold mt-5">{title}</h1>
       <p className="leading-6 mt-5">{text}</p>
