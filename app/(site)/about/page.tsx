@@ -13,7 +13,7 @@ function About() {
         </section>
         <Bio />
         <section>
-          <article className="mt-5">
+          <article className="m-3">
             Bernard Marr was born near Hamburg in Germany, where he grew up. He
             then moved to Cambridge, England to complete his degrees in
             business, engineering and information technology. He then joined the

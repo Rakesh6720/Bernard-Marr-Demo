@@ -5,8 +5,8 @@ import React from "react";
 function Bio() {
   return (
     <>
-      <div className="flex flex-col-2 mt-7">
-        <section className="w-1/3">
+      <div className="md:flex md:flex-col-2 sm:flex-col-1 mt-7">
+        <section className="md:w-1/3">
           <Image
             src={BernardBio}
             height={462}
@@ -15,7 +15,7 @@ function Bio() {
             className="mx-auto"
           />
         </section>
-        <section className="bg-gray-200 w-3/4 my-auto">
+        <section className="bg-gray-200 md:w-3/4 my-auto">
           <p className="py-10 px-20">
             Bernard Marr is a world-renowned futurist, influencer and thought
             leader in the fields of business and technology, with a passion for
@@ -31,7 +31,6 @@ function Bio() {
           </p>
         </section>
       </div>
-      
     </>
   );
 }
