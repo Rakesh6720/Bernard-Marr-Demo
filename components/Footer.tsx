@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex justify-between border-t-2 border-black mt-5">
+    <div className="flex justify-between border-t-2 border-black mt-5 flex-col md:flex-row">
       <div className="py-5 px-5">
         <div className="flex-col ">
           <div className="py-3">
@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="py-3">Terms & Conditions</div>
         <div className="py-3">Privacy Policy</div>
       </div>
-      <div className="py-10">
+      <div className="py-10 pl-5">
         <h1 className="text-black w-80 text-2xl">Bernard Marr & Co.</h1>
         <h3 className="text-md leading-3 text-black">
           Future . Business . Success
