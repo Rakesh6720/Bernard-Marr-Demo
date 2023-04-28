@@ -32,7 +32,7 @@ export default async function YouTube() {
           </button>
         </div>
       </div>
-      {/* <div className="lg:flex lg:flex-row lg:justify-center overflow-hidden">
+      <div className="lg:flex lg:flex-row lg:justify-center flex-wrap md:hidden sm:hidden">
         {videos.map((video, index) => {
           if (index < videos.length - 1) {
             return (
@@ -41,8 +41,8 @@ export default async function YouTube() {
               </div>
             );
           }
-        })}        
-      </div> */}
+        })}
+      </div>
 
       <VideoCarousel videos={videos} />
     </div>

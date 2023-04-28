@@ -30,7 +30,7 @@ const VideoCarousel = ({ videos }: Props) => {
   const title = videos[videoIndex].title;
 
   return (
-    <div className="flex-col">
+    <div className="flex-col lg:hidden md:block">
       <div id="video-player" className="justify-center flex">
         <div id="video">
           <iframe
@@ -45,7 +45,7 @@ const VideoCarousel = ({ videos }: Props) => {
           />
         </div>
       </div>
-      <div id="video-buttons" className="flex justify-center">
+      <div id="video-buttons" className="flex mx-auto max-w-[400px]">
         <button onClick={playPreviousVideo} className="mx-auto">
           Previous
         </button>
