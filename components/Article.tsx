@@ -21,6 +21,7 @@ export default function Article({
   image,
   content,
 }: Props) {
+  const excerpt = content.splice(0, 1);
   return (
     <div className="flex-col w-96 h-600px border border-black">
       <Link href={`/articles/${slug}`}>
@@ -28,7 +29,7 @@ export default function Article({
         <div className="p-5">
           <h1 className="text-xl mb-2">{title}</h1>
 
-          <PortableText value={content} />
+          <PortableText value={excerpt} />
 
           <div className="bg-[#c6ce00] relative ml-60 py-3 mt-5">
             <svg

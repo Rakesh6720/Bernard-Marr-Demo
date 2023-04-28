@@ -8,7 +8,7 @@ export default async function Articles() {
       <div className="text-center bg-black w-full text-white text-2xl py-3 my-5">
         Recent Articles
       </div>
-      <div className="lg:flex lg:flex-row lg:justify-center lg:gap-3 sm:flex-col">
+      <div className="lg:flex lg:flex-row lg:justify-center lg:gap-3 sm:flex-col ">
         {articles.map(
           (article, index) =>
             index < 3 && (
@@ -25,6 +25,9 @@ export default async function Articles() {
               </div>
             )
         )}
+      </div>
+      <div className="text-center bg-[#c6ce00] text-white text-xl py-3 mt-3 w-1/3 mx-auto">
+        See All Articles
       </div>
     </div>
   );
