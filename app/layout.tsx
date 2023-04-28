@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import "./globals.css";
 import AppBarComponent from "@/components/AppBarComponent";
 
@@ -16,6 +17,9 @@ export default function RootLayout({
       <body>
         <AppBarComponent />
         {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

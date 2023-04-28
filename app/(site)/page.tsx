@@ -13,9 +13,6 @@ export default function Home() {
       <YouTube />
       {/* @ts-expect-error Async Server Component */}
       <Articles />
-      <footer>
-        <Footer />
-      </footer>
     </div>
   );
 }
