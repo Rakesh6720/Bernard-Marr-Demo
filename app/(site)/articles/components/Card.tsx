@@ -12,7 +12,7 @@ const Card = ({ article }: Props) => {
   const excerpt = article.content.slice(0, 1);
 
   return (
-    <div className="flex-col w-[435px] border-slate-400 border my-5">
+    <div className="flex-col w-[435px] border-slate-400 border my-5 justify-center items-center">
       <div id="image">
         <Image
           src={article.image}

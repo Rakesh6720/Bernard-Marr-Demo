@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Article from "./Article";
 import { getArticles } from "@/sanity/sanity-utils";
 
@@ -27,7 +28,7 @@ export default async function Articles() {
         )}
       </div>
       <div className="text-center bg-[#c6ce00] text-white text-xl py-3 mt-3 w-1/3 mx-auto">
-        See All Articles
+        <Link href="/articles">See All Articles</Link>
       </div>
     </div>
   );
