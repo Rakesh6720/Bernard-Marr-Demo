@@ -6,7 +6,7 @@ import YouTubeImage from "../assets/youtube-button.png";
 export default async function YouTube() {
   const videos = await getVideos();
   return (
-    <div>
+    <div className="flex-col">
       <div className="flex flex-col justify-center items-center my-3 md:flex md:flex-row md:justify-normal">
         <div className="bg-blue-800 rounded-full w-20 h-20"></div>
         <div className="my-3 text-center md:text-left md:ml-3">
@@ -31,11 +31,13 @@ export default async function YouTube() {
           </button>
         </div>
       </div>
-      <div className="md:flex mr-12 md:ml-8 md:justify-center lg:justify-between md:items-center flex-wrap">
+      <div className="lg:flex lg:flex-row lg:justify-center overflow-hidden">
         {videos.map((video, index) => {
-          if (index < 4) {
+          if (index < videos.length - 1) {
             return (
-              <Video key={video._id} src={video.url} title={video.title} />
+              <div key={video._id} className="flex justify-center">
+                <Video key={video._id} src={video.url} title={video.title} />
+              </div>
             );
           }
         })}
