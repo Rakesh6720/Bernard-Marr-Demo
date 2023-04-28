@@ -12,7 +12,7 @@ function Card({
 }) {
   return (
     <div className="w-[425px] border flex-col-1 mb-5">
-      <Image src={image} alt={title} width={425} height={313} />
+      <Image src={image} alt={title} width={500} height={300} />
       <h1 className="text-[#c6ce00] text-xl font-semibold mt-5">{title}</h1>
       <p className="leading-6 mt-5">{text}</p>
       <div className="bg-[#c6ce00] relative ml-60 py-3 mt-5 mb-5 rounded">
