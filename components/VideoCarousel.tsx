@@ -45,12 +45,15 @@ const VideoCarousel = ({ videos }: Props) => {
           />
         </div>
       </div>
+      <div>
+        <h3 className="text-center mb-3">{title}</h3>
+      </div>
       <div id="video-buttons" className="flex mx-auto max-w-[400px]">
         <button onClick={playPreviousVideo} className="mx-auto">
-          Previous
+          <p className="hover:underline">Previous</p>
         </button>
         <button onClick={playNextVideo} className="mx-auto">
-          Next
+          <p className="hover:underline">Next</p>
         </button>
       </div>
     </div>
