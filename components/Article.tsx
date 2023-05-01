@@ -27,7 +27,9 @@ export default function Article({
       <Link href={`/articles/${slug}`}>
         <Image src={image} alt={title} width={400} height={300} />
         <div className="p-5">
-          <h1 className="text-xl mb-2">{title}</h1>
+          <h1 className="text-2xl mb-2 text-[#c6ce00] font-semibold">
+            {title}
+          </h1>
 
           <PortableText value={excerpt} />
 
