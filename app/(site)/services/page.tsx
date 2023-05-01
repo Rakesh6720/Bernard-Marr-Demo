@@ -6,6 +6,7 @@ function Services() {
   return (
     <div>
       <Hero />
+      {/* @ts-expect-error Async Server Component */}
       <Cards />
     </div>
   );

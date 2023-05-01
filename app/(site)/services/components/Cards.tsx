@@ -1,28 +1,18 @@
 import React from "react";
 import Card from "./Card";
+import { getServices } from "@/sanity/sanity-utils";
+import { Service } from "@/types/Service";
 let data = require("../data/data.json");
 
-interface Object {
-  title: string;
-  text: string;
-  image: string;
-}
-function Cards() {
+const Cards = async () => {
+  const services = await getServices();
   return (
     <div className="flex flex-wrap gap-5 justify-center mt-10">
-      {data.map((object: Object, index: number) => (
-        <Card
-          key={index}
-          title={object.title}
-          text={object.text}
-          image={object.image}
-        />
+      {services.map((service: Service) => (
+        <Card key={service._id} service={service} />
       ))}
-      {data.map((object: Object, index: number) => {
-        console.log(object.image);
-      })}
     </div>
   );
-}
+};
 
 export default Cards;

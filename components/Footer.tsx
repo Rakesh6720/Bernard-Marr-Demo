@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="flex justify-between border-t-2 border-black mt-5 md:flex-row flex-col-reverse">
       <div className="md:py-5 px-5 sm:py-2">
-        <div className="flex-col ">
+        <div className="flex-col">
           <div className="py-3">
             &copy; Bernard Marr {new Date().getFullYear()}
           </div>
