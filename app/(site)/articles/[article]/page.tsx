@@ -9,14 +9,15 @@ type Props = {
 export default async function Article({ params }: Props) {
   const slug = params.article;
   const article = await getArticle(slug);
+  const date = `${new Date(article._createdAt).getMonth()}/${new Date(
+    article._createdAt
+  ).getDate()}/${new Date(article._createdAt).getFullYear()}`;
 
   return (
     <div className="mx-5">
       <header>
         <h1 className="text-5xl my-5">{article.title}</h1>
-        <h3 className="my-3">
-          {article._createdAt.toLocaleString("en-US", { month: "long" })}
-        </h3>
+        <h3 className="my-3">{date}</h3>
       </header>
       <hr />
       <main>
