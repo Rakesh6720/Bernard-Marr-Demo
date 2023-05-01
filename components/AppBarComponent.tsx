@@ -33,13 +33,15 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar position="relative" color="default">
-      <div>
+      <div className="p-5">
         <Toolbar disableGutters>
           <Box>
             <Link href="/">
               <div className="ml-3">
-                <h1 className="text-black w-80 text-2xl">Bernard Marr & Co.</h1>
-                <h3 className="text-md leading-3 text-black">
+                <h1 className="text-black lg:w-80 lg:text-xl text-[14px] font-bold">
+                  Bernard Marr & Co.
+                </h1>
+                <h3 className="lg:text-md text-[11px] leading-3 text-black">
                   Future . Business . Success
                 </h3>
               </div>

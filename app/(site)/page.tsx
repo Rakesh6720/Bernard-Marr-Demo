@@ -7,7 +7,7 @@ import YouTube from "@/components/Youtube";
 
 export default function Home() {
   return (
-    <div>
+    <div className="lg:ml-24">
       <Hero />
       {/* @ts-expect-error Async Server Component */}
       <YouTube />
