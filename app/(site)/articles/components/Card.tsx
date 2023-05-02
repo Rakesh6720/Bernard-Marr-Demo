@@ -22,7 +22,7 @@ const Card = ({ article }: Props) => {
         />
       </div>
       <div className="p-5">
-        <div id="title" className="text-[#c6ce00] font-semibold text-2xl">
+        <div id="title" className="text-slate-700 font-semibold text-2xl">
           {article.title}
         </div>
         <div id="summary" className="">
@@ -30,7 +30,7 @@ const Card = ({ article }: Props) => {
         </div>
         <div
           id="view-article"
-          className="bg-[#c6ce00] text-center rounded-sm text-white"
+          className="bg-slate-700 text-center rounded-sm text-white"
         >
           <Link href={`/articles/${article.slug}`}>View Article</Link>
         </div>

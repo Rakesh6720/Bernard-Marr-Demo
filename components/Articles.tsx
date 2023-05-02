@@ -27,7 +27,7 @@ export default async function Articles() {
             )
         )}
       </div>
-      <div className="text-center bg-[#c6ce00] text-white text-xl py-3 px-3 mt-3 w-1/3 mx-auto rounded">
+      <div className="text-center bg-slate-700 text-white text-xl py-3 px-3 mt-3 w-1/3 mx-auto rounded">
         <Link href="/articles">See All Articles</Link>
       </div>
     </div>

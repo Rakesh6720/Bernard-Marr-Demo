@@ -13,13 +13,13 @@ function Card({ service }: Props) {
   return (
     <div className="w-[425px] border flex-col-1 mb-5">
       <Image src={service.image} alt={service.title} width={500} height={300} />
-      <h1 className="text-[#c6ce00] text-xl font-semibold mt-5">
+      <h1 className="text-slate-700 text-xl font-semibold mt-5">
         {service.title}
       </h1>
       <div id="summary" className="leading-6 mt-5">
         <PortableText value={excerpt} />
       </div>
-      <div className="bg-[#c6ce00] relative ml-60 py-3 mt-5 mb-5 rounded">
+      <div className="bg-slate-700 relative ml-60 py-3 mt-5 mb-5 rounded">
         <Link href={`/services/${service.slug}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

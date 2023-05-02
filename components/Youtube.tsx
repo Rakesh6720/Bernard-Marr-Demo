@@ -9,7 +9,7 @@ export default async function YouTube() {
   return (
     <div className="flex-col mt-20">
       <div className="flex flex-col justify-center items-center my-3 md:flex md:flex-row md:justify-normal">
-        <div className="bg-[#c6ce00] rounded-full w-20 h-20"></div>
+        <div className="bg-slate-700 rounded-full w-20 h-20"></div>
         <div className="my-3 text-center md:text-left md:ml-3">
           <h5>Amit Manghani</h5>
           <h6>71K Subscribers &bull; 698 Videos &bull; 5.4M views</h6>
