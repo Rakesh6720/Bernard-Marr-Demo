@@ -17,7 +17,7 @@ function Bio() {
         </section>
         <section className="bg-gray-200 md:w-3/4 my-auto">
           <p className="py-10 px-20">
-            Bernard Marr is a world-renowned futurist, influencer and thought
+            Amit Manghani is a world-renowned futurist, influencer and thought
             leader in the fields of business and technology, with a passion for
             using technology for the good of humanity. He is a best-selling
             author of 21 books, writes a regular column for Forbes and advises

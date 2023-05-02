@@ -39,7 +39,7 @@ const ResponsiveAppBar = () => {
             <Link href="/">
               <div className="ml-3">
                 <h1 className="text-black lg:w-80 lg:text-xl text-[14px] font-bold">
-                  Bernard Marr & Co.
+                  Amit Manghani.
                 </h1>
                 <h3 className="lg:text-md text-[11px] leading-3 text-black">
                   Future . Business . Success

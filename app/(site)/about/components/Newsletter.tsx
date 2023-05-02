@@ -19,7 +19,7 @@ function Newsletter() {
           <div className="flex-col flex lg:justify-around lg:flex-row mt-3">
             <input className="py-5 px-5" placeholder="Email" type="text" />
             <input className="py-5 px-5" placeholder="Name" type="text" />
-            <button className="bg-[#c6ce00] text-white px-7">Sign-up</button>
+            <button className="bg-slate-700 text-white px-7">Sign-up</button>
           </div>
           <div className="flex flex-row mt-3">
             <input type="checkbox" />

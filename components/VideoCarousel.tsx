@@ -46,7 +46,7 @@ const VideoCarousel = ({ videos }: Props) => {
         </div>
       </div>
       <div>
-        <h3 className="text-center mb-3 text-[#c6ce00] font-semibold text-xl">
+        <h3 className="text-center mb-3 text-slate-700 font-semibold text-xl">
           {title}
         </h3>
       </div>

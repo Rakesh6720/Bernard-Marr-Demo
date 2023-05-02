@@ -9,20 +9,20 @@ function About() {
       <Hero />
       <div className="mt-5">
         <section className="bg-black text-white h-16 justify-center flex items-center text-2xl mb-3">
-          Bernard Marr, Brief Overview...
+          Amit Manghani, Brief Overview...
         </section>
         <Bio />
         <section>
           <article className="m-3">
-            Bernard Marr was born near Hamburg in Germany, where he grew up. He
+            Amit Manghani was born near Hamburg in Germany, where he grew up. He
             then moved to Cambridge, England to complete his degrees in
             business, engineering and information technology. He then joined the
             Cambridge Judge Business School as a research fellow and later
             Cranfield School of Management. In 2006, Bernard left the business
-            school world to focus on his own company Bernard Marr & Co.
+            school world to focus on his own company Amit Manghani & Co.
             <br></br>
             <br></br>
-            Today, Bernard Marr is one of the world’s most highly respected
+            Today, Amit Manghani is one of the world’s most highly respected
             experts when it comes to future trends, strategy, business
             performance, digital transformation and the intelligent use of data
             and AI in business. In that capacity he has worked with and advised
