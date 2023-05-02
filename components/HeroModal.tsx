@@ -9,17 +9,17 @@ const data = [
   {
     id: 1,
     title: "Influencer",
-    text: "Bernard Marr is one of the world&apos;s most successful social media influencers at the intersection of business and technology",
+    text: "Amit Manghani is one of the world&apos;s most successful social media influencers at the intersection of business and technology",
   },
   {
     id: 2,
     title: "Keynote Speaker",
-    text: "Bernard Marr is a popular keynote choice because of his vast practical experience with many of the world's best known companies and governments",
+    text: "Amit Manghani is a popular keynote choice because of his vast practical experience with many of the world's best known companies and governments",
   },
   {
     id: 3,
     title: "Board Advisor",
-    text: "Bernard Marr regularly advises boards and executive teams of many of the most successful companies and government organisations in the world",
+    text: "Amit Manghani regularly advises boards and executive teams of many of the most successful companies and government organisations in the world",
   },
 ];
 
